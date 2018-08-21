@@ -1,32 +1,30 @@
-/*print largest number in an array */
+// largest of 3 numbers
 
 # include<stdio.h>
 
-double arr[50];
-int n,i,largest ; 
+int a,b,c,n;
 
-int main()
- {
-  //number of elements
-  
-  printf("Enter the number of elements :");
-  scanf("%d",&n);
-  
-  for(i=0;i<n;i++)        //elements in array
-     {printf("Element ");
-      scanf("%lf",&arr[i]);
-      }
- //scanning largest element
-     
-    largest = arr[0];
-    
-    for(i=0;i<n;i++)
-       {
-        if (largest<arr[i]);
-          { 
-            largest = arr[i];
-           }
-        } 
-   printf("The largest element is %ls",&largest);     
-   return largest;
- }         
+void main()
+{
+ //entering numbers
+ 
+ printf("Enter three numbers :");
+ scanf("%d \n %d \n %d",&a,&b,&c);
+ 
+ if(a>b && a>c)
+   {
+    printf(" %d is largest \n",a);
+    }
+ else if(b>c)
+   {
+    printf("  %d is largest \n",b);
+    }
+ else if(c>b)
+   {
+    printf("  %d is largest \n",c);
+    }      
+ else
+   {
+    printf("\n The numbers are equal. LOL:) \n");
+    }
+}         
