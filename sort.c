@@ -1,4 +1,4 @@
-// WAP to impllement bubble sorting on a array
+// WAP to implement bubble sorting on a array
 
 # include <stdio.h> 
 # include <stdlib.h>
